@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Задача по верстке 1 - сверстать по макету</title>
+  <link href="https://fonts.googleapis.com/css?family=Oswald:400,500&display=swap&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <section class="header">
+      <h1 class="header__heading">Регистрация сертификата «Дом в подарок»</h1>
+      <img src="./img/header_picture.jpeg" alt="Sertificate">
+    </section>
+    <section class="registartion">
+      <form class="registration__form" id="registration" name="registration">
+        <h2 class="registration__heading">Регистрация сертификата</h2>
+        <p class="registration__instruction">Для регистрации сертификата - введите код сертификата и <span class="registrartion__words">ваши контактные данные</span></p>  
+        <input type="number" class="input registration__input" placeholder="Код сертификата">
+        <input type="text" class="input registration__input" placeholder="Ваше имя">
+        <input type="tel" class="input registration__input" placeholder="Ваш телефон">
+        <input type="email" class="input registration__input" placeholder="Ваш е-мейл">
+        <button type="submit" form="registration" class="form__button registration__button"><span class="registration__button-text">Отправить заявку на участие в акции</span></button>
+        <p class="registration__privacy-policy">
+          Отправляя форму Вы соглашаетесь с <a href="#" class="registration__link">Политикой обработки данных</a>
+        </p>
+      </form>
+    </section>
+    <section class="accordeon">
+      <details>
+        <summary class="accordeon__item">Что дает сертификат?</summary>
+        <p class="accordeon__descr">
+          Сертификат даёт право участвовать в акции «Дом в подарок». Номер сертификата является вашим уникальным номером участника. Не забудьте его зарегистрировать на нашем сайте и взять с собой на розыгрыш главного приза 16 декабря 2018 года. Владелец сертификата может принимать участие в розыгрыше только при наличии акта приёмки-передачи строения, подтверждающего окончание строительства.
+        </p>
+      </details>
+      <details>
+        <summary class="accordeon__item accordeon__item_second">Где получить сертификат?</summary>
+        <p class="accordeon__descr">
+          Сертификат выдаётся всем клиента строительной компании «Теремъ» во время подписания договора на строительство дома или бани на территории выставочного комплекса компании по адресу: г. Москва, ул. Зеленодольская, вл. 42. Сертификаты выдаются в период с 6 по 19 сентября 2018 года включительно.
+        </p>
+      </details>
+    </section>
+    <section class="footer">
+      <h2 class="footer__heading">Если остались вопросы по участию в акции</h2>
+      <p class="footer__text">Оставьте телефонный номер и наши специалисты свяжутся с Вами через 30 секунд</p>
+      <form class="footer__form" id="footer" name="footer">
+        <div class="footer__form-top">
+          <input type="text" class="input footer__input footer__input_name" placeholder="Ваше имя">
+          <input type="tel" class="input footer__input footer__input_tel" placeholder="+7    ( _ _ _ )   _ _ _    _ _    _ _">
+          <button type="submit" form="footer" class="form__button footer__button">Заявка на консультацию</button>
+        </div>
+        <input id="approve" class="footer__approve" name="approve" type="checkbox">
+        <label for="approve" class="footer__approve-label">Я принимаю условия Политики обработки данных</label> 
+      </form>
+    </section>
+  </div>
+  
+</body>
+</html>
